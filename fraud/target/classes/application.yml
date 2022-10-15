@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+    application:
+        name: fraud
+
+    datasource:
+        url: jdbc:postgresql://localhost:5678/fraud
+        username: postgres
+        password: 879470
+        driver-class-name: org.postgresql.Driver
+
+    jpa:
+        hibernate:
+          ddl-auto: update
+          naming:
+            implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+        show-sql: false
+        properties:
+          hibernate:
+            format_sql: true
+        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
