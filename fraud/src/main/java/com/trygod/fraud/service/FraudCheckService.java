@@ -19,7 +19,7 @@ public class FraudCheckService {
 
         fraudCheckHistoryRepo.save(FraudCheckHistory.builder()
                 .customerId(customerId)
-                .isFraudster(true)
+                .isFraudster(false)
                 .build());
         return false;
     }
